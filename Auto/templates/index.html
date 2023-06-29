@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Automation Example</title>
+</head>
+<body>
+    <h1>Automation Example</h1>
+    
+    <form method="POST" action="{% url 'generate_auth_code' %}">
+        {% csrf_token %}
+        <button type="submit">Generate Auth Code</button>
+    </form>
+</body>
+</html>
